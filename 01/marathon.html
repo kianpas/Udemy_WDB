@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Race Registration!</h1>
+    <form action="">
+      <div>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" />
+      </div>
+      <p>Select a Race :</p>
+      <!--value값이 라디오의 값으로 전달됨-->
+      <div>
+        <input type="radio" name="race" id="funrun" value="funrun" />
+        <label for="funrun">Fun run 5k</label>
+      </div>
+      <div>
+        <input type="radio" name="race" id="half" value="half" />
+        <label for="half">Half Marathon</label>
+      </div>
+      <div>
+        <input type="radio" name="race" id="full" value="full" />
+        <label for="full">Full Marathone</label>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="age">Select a Age Group</label>
+        <select name="age" id="age">
+          <option value="kids">under 18</option>
+          <option value="ya">18-30</option>
+          <option value="ma">30-50</option>
+          <option value="oa">over 50</option>
+        </select>
+      </div>
+      <p>
+        <input type="submit" value="submit" />
+      </p>
+    </form>
+  </body>
+</html>

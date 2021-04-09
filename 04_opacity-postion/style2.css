@@ -1,0 +1,36 @@
+div {
+  background-color: aquamarine;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+#middle {
+  background-color: black;
+}
+
+#static #middle {
+  position: static;
+  top: 10px;
+}
+
+#relative #middle {
+  /*부모 기준 상대적 위치*/
+  position: relative;
+  top: 10px;
+}
+
+#absolute #middle {
+  /*부모 relative 요소 기준으로 
+  부모가 relative가 아니면 최상위 기준*/
+  position: absolute;
+  bottom: 10px;
+}
+
+/*fixed 무조건 페이지 , 스크롤 내려가도 유지*/
+#fixed #middle {
+  /*부모 relative 요소 기준으로 
+  부모가 relative가 아니면 최상위 기준*/
+  position: fixed;
+  bottom: 10px;
+}
